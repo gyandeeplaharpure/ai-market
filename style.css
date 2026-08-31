@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b1020;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 8%;
+  background: #11182b;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00e5ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #00e5ff;
+  color: #07111f;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #00e5ff;
+}
+
+.hero p {
+  color: #b8c0d0;
+  max-width: 600px;
+  margin: auto auto 30px;
+  line-height: 1.6;
+}
+
+.categories,
+#prompts {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.categories h2,
+#prompts h2 {
+  margin-bottom: 40px;
+}
+
+.category-grid,
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.category,
+.product {
+  background: #151d33;
+  border: 1px solid #283454;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.category {
+  font-size: 20px;
+}
+
+.product {
+  text-align: left;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.product p {
+  color: #aeb8cc;
+  margin: 15px 0;
+}
+
+.price {
+  font-size: 25px;
+  color: #00e5ff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product button {
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.8);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-box {
+  background: #151d33;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+}
+
+.close {
+  float: right;
+  background: red;
+  color: white;
+}
+
+.checkout {
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  background: #11182b;
+}
+
+footer p {
+  margin-top: 10px;
+  color: #9aa5bb;
+}
+
+@media (max-width: 600px) {
+
+  nav {
+    padding: 15px;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+}
