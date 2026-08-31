@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Market | AI Prompts for ₹2</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">AI <span>Market</span></div>
+
+  <div class="nav-links">
+    <a href="#prompts">Prompts</a>
+    <a href="#ideas">Ideas</a>
+    <button onclick="openCart()">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </button>
+  </div>
+</nav>
+
+
+<section class="hero">
+
+  <h1>Powerful AI Ideas.<br><span>Only ₹2 Each.</span></h1>
+
+  <p>
+    Discover unique AI prompts, video ideas, image prompts
+    and content ideas.
+  </p>
+
+  <button onclick="document.getElementById('prompts').scrollIntoView()">
+    Explore AI Products
+  </button>
+
+</section>
+
+
+<section class="categories">
+
+  <h2>Explore Categories</h2>
+
+  <div class="category-grid">
+
+    <div class="category">🤖<br>AI Prompts</div>
+    <div class="category">🎬<br>Video Ideas</div>
+    <div class="category">📱<br>Reel Ideas</div>
+    <div class="category">🖼️<br>Image Prompts</div>
+    <div class="category">✍️<br>Content Ideas</div>
+
+  </div>
+
+</section>
+
+
+<section id="prompts">
+
+  <h2>🔥 Popular AI Products</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <div class="icon">🤖</div>
+      <h3>Business Growth Prompt</h3>
+      <p>Generate powerful business strategies with AI.</p>
+
+      <div class="price">₹2</div>
+
+      <button onclick="addToCart('Business Growth Prompt',2)">
+        Add to Cart
+      </button>
+    </div>
+
+
+    <div class="product">
+      <div class="icon">🎬</div>
+      <h3>Viral Video Idea</h3>
+      <p>Creative AI idea designed for engaging videos.</p>
+
+      <div class="price">₹2</div>
+
+      <button onclick="addToCart('Viral Video Idea',2)">
+        Add to Cart
+      </button>
+    </div>
+
+
+    <div class="product">
+      <div class="icon">📱</div>
+      <h3>Instagram Reel Idea</h3>
+      <p>A creative concept for your next viral reel.</p>
+
+      <div class="price">₹2</div>
+
+      <button onclick="addToCart('Instagram Reel Idea',2)">
+        Add to Cart
+      </button>
+    </div>
+
+
+    <div class="product">
+      <div class="icon">🖼️</div>
+      <h3>Cinematic Image Prompt</h3>
+      <p>Create professional cinematic AI images.</p>
+
+      <div class="price">₹2</div>
+
+      <button onclick="addToCart('Cinematic Image Prompt',2)">
+        Add to Cart
+      </button>
+    </div>
+
+
+    <div class="product">
+      <div class="icon">✍️</div>
+      <h3>Content Creator Idea</h3>
+      <p>Fresh content ideas for creators and brands.</p>
+
+      <div class="price">₹2</div>
+
+      <button onclick="addToCart('Content Creator Idea',2)">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<div id="cart-modal" class="modal">
+
+  <div class="cart-box">
+
+    <button class="close" onclick="closeCart()">×</button>
+
+    <h2>Your Cart 🛒</h2>
+
+    <div id="cart-items"></div>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+    <button class="checkout" onclick="checkout()">
+      Proceed to Payment
+    </button>
+
+  </div>
+
+</div>
+
+
+<footer>
+
+  <h2>AI Market</h2>
+
+  <p>Small price. Big creativity.</p>
+
+  <p>© 2026 AI Market. All rights reserved.</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
